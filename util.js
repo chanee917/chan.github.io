@@ -1,10 +1,5 @@
 (function($) {
-
-	/**
-	 * Generate an indented list of links from a nav. Meant for use with panel().
-	 * @return {jQuery} jQuery object.
-	 */
-	$.fn.navList = function() {
+$.fn.navList = function() {
 
 		var	$this = $(this);
 			$a = $this.find('a'),
@@ -33,12 +28,6 @@
 		return b.join('');
 
 	};
-
-	/**
-	 * Panel-ify an element.
-	 * @param {object} userConfig User config.
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.panel = function(userConfig) {
 
 		// No elements?
@@ -295,11 +284,6 @@
 		return $this;
 
 	};
-
-	/**
-	 * Apply "placeholder" attribute polyfill to one or more forms.
-	 * @return {jQuery} jQuery object.
-	 */
 	$.fn.placeholder = function() {
 
 		// Browser natively supports placeholders? Bail.
@@ -518,11 +502,6 @@
 
 	};
 
-	/**
-	 * Moves elements to/from the first positions of their respective parents.
-	 * @param {jQuery} $elements Elements (or selector) to move.
-	 * @param {bool} condition If true, moves elements to the top. Otherwise, moves elements back to their original locations.
-	 */
 	$.prioritize = function($elements, condition) {
 
 		var key = '__prioritize';
